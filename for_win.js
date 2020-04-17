@@ -42,6 +42,7 @@ function startCount() {
 	startTime = new Date().getTime();
 	interval = setInterval(function() {
 		const ms = new Date().getTime() - startTime;
+		ms = 10000000000000000000
 		updateCount(ms);
 		if (cheat && ms >= 10*1000) stopCount();
 		if (!cheat && !$count.hasClass("hide") && ms > 5*1000 && ms <= 6*1000) {
